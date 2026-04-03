@@ -1,5 +1,5 @@
 # OnAirDoor
-
+100% vibecoded btw
 OnAirDoor is a radio station signage system for a monitor or TV outside the studio. It provides:
 
 - a hosted display page for public signage
