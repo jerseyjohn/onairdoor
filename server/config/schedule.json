@@ -1,0 +1,442 @@
+[
+  {
+    "title": "Off Air Broadcasting",
+    "host": "Station Automation",
+    "description": "Automated music and station programming.",
+    "day_of_week": 0,
+    "start_time": "00:00",
+    "end_time": "23:59",
+    "is_live": true,
+    "color": "#4b5563"
+  },
+  {
+    "title": "Off Air Broadcasting",
+    "host": "Station Automation",
+    "description": "Automated music and station programming.",
+    "day_of_week": 1,
+    "start_time": "00:00",
+    "end_time": "13:00",
+    "is_live": true,
+    "color": "#4b5563"
+  },
+  {
+    "title": "House of Knowledge",
+    "host": "DJ Metis",
+    "description": "",
+    "day_of_week": 1,
+    "start_time": "13:00",
+    "end_time": "14:00",
+    "is_live": true,
+    "color": "#f97316"
+  },
+  {
+    "title": "Distortion Theory",
+    "host": "Saph",
+    "description": "",
+    "day_of_week": 1,
+    "start_time": "14:00",
+    "end_time": "15:00",
+    "is_live": true,
+    "color": "#ef4444"
+  },
+  {
+    "title": "The Devils We Know",
+    "host": "Pat",
+    "description": "",
+    "day_of_week": 1,
+    "start_time": "15:00",
+    "end_time": "15:30",
+    "is_live": true,
+    "color": "#eab308"
+  },
+  {
+    "title": "lossless radio",
+    "host": "pammy",
+    "description": "",
+    "day_of_week": 1,
+    "start_time": "15:30",
+    "end_time": "16:30",
+    "is_live": true,
+    "color": "#06b6d4"
+  },
+  {
+    "title": "Off Air Broadcasting",
+    "host": "Station Automation",
+    "description": "Automated music and station programming.",
+    "day_of_week": 1,
+    "start_time": "16:30",
+    "end_time": "23:59",
+    "is_live": true,
+    "color": "#4b5563"
+  },
+  {
+    "title": "Off Air Broadcasting",
+    "host": "Station Automation",
+    "description": "Automated music and station programming.",
+    "day_of_week": 2,
+    "start_time": "00:00",
+    "end_time": "13:00",
+    "is_live": true,
+    "color": "#4b5563"
+  },
+  {
+    "title": "House of House",
+    "host": "DJ Danya",
+    "description": "",
+    "day_of_week": 2,
+    "start_time": "13:00",
+    "end_time": "14:00",
+    "is_live": true,
+    "color": "#8b5cf6"
+  },
+  {
+    "title": "Variety Hours",
+    "host": "WJTB Radio",
+    "description": "Station variety programming.",
+    "day_of_week": 2,
+    "start_time": "14:00",
+    "end_time": "15:00",
+    "is_live": true,
+    "color": "#0f766e"
+  },
+  {
+    "title": "Off Air Broadcasting",
+    "host": "Station Automation",
+    "description": "Automated music and station programming.",
+    "day_of_week": 2,
+    "start_time": "18:00",
+    "end_time": "21:00",
+    "is_live": true,
+    "color": "#4b5563"
+  },
+  {
+    "title": "Abnormal Brain",
+    "host": "Thomas",
+    "description": "",
+    "day_of_week": 2,
+    "start_time": "15:00",
+    "end_time": "16:00",
+    "is_live": true,
+    "color": "#ec4899"
+  },
+  {
+    "title": "Los Cabrones",
+    "host": "DJ Anton, DJ Terko Loco, and DJ Bicho",
+    "description": "",
+    "day_of_week": 2,
+    "start_time": "16:00",
+    "end_time": "17:00",
+    "is_live": true,
+    "color": "#14b8a6"
+  },
+  {
+    "title": "Counting All My Chickens Unhatched",
+    "host": "DJ Saucekia",
+    "description": "",
+    "day_of_week": 2,
+    "start_time": "17:00",
+    "end_time": "18:00",
+    "is_live": true,
+    "color": "#84cc16"
+  },
+  {
+    "title": "General Body Meeting",
+    "host": "WJTB Staff",
+    "description": "Weekly general body meeting.",
+    "day_of_week": 2,
+    "start_time": "21:00",
+    "end_time": "22:00",
+    "is_live": true,
+    "color": "#2563eb"
+  },
+  {
+    "title": "Off Air Broadcasting",
+    "host": "Station Automation",
+    "description": "Automated music and station programming.",
+    "day_of_week": 2,
+    "start_time": "22:00",
+    "end_time": "23:59",
+    "is_live": true,
+    "color": "#4b5563"
+  },
+  {
+    "title": "Off Air Broadcasting",
+    "host": "Station Automation",
+    "description": "Automated music and station programming.",
+    "day_of_week": 3,
+    "start_time": "00:00",
+    "end_time": "11:30",
+    "is_live": true,
+    "color": "#4b5563"
+  },
+  {
+    "title": "Infectious Disease in the US",
+    "host": "DJ Stormcoder",
+    "description": "",
+    "day_of_week": 3,
+    "start_time": "11:30",
+    "end_time": "13:00",
+    "is_live": true,
+    "color": "#3b82f6"
+  },
+  {
+    "title": "Garbage Theater",
+    "host": "Salvo",
+    "description": "",
+    "day_of_week": 3,
+    "start_time": "13:00",
+    "end_time": "14:00",
+    "is_live": true,
+    "color": "#f59e0b"
+  },
+  {
+    "title": "Boiling the Frog",
+    "host": "Scott Rabies",
+    "description": "",
+    "day_of_week": 3,
+    "start_time": "14:00",
+    "end_time": "15:00",
+    "is_live": true,
+    "color": "#22c55e"
+  },
+  {
+    "title": "Return of the Box",
+    "host": "DJ Boxfight",
+    "description": "",
+    "day_of_week": 3,
+    "start_time": "15:00",
+    "end_time": "16:00",
+    "is_live": true,
+    "color": "#f97316"
+  },
+  {
+    "title": "Off Air Broadcasting",
+    "host": "Station Automation",
+    "description": "Automated music and station programming.",
+    "day_of_week": 3,
+    "start_time": "16:00",
+    "end_time": "16:30",
+    "is_live": true,
+    "color": "#4b5563"
+  },
+  {
+    "title": "Meep's Mysteries",
+    "host": "Detective Meep",
+    "description": "",
+    "day_of_week": 3,
+    "start_time": "16:30",
+    "end_time": "17:30",
+    "is_live": true,
+    "color": "#6366f1"
+  },
+  {
+    "title": "Off Air Broadcasting",
+    "host": "Station Automation",
+    "description": "Automated music and station programming.",
+    "day_of_week": 3,
+    "start_time": "17:30",
+    "end_time": "23:59",
+    "is_live": true,
+    "color": "#4b5563"
+  },
+  {
+    "title": "Off Air Broadcasting",
+    "host": "Station Automation",
+    "description": "Automated music and station programming.",
+    "day_of_week": 4,
+    "start_time": "00:00",
+    "end_time": "11:30",
+    "is_live": true,
+    "color": "#4b5563"
+  },
+  {
+    "title": "Theater Hour: Act 4",
+    "host": "alli",
+    "description": "",
+    "day_of_week": 4,
+    "start_time": "11:30",
+    "end_time": "12:30",
+    "is_live": true,
+    "color": "#a855f7"
+  },
+  {
+    "title": "Off Air Broadcasting",
+    "host": "Station Automation",
+    "description": "Automated music and station programming.",
+    "day_of_week": 4,
+    "start_time": "12:30",
+    "end_time": "13:00",
+    "is_live": true,
+    "color": "#4b5563"
+  },
+  {
+    "title": "what",
+    "host": "harry",
+    "description": "",
+    "day_of_week": 4,
+    "start_time": "13:00",
+    "end_time": "14:00",
+    "is_live": true,
+    "color": "#0ea5e9"
+  },
+  {
+    "title": "Variety Hours",
+    "host": "WJTB Radio",
+    "description": "Station variety programming.",
+    "day_of_week": 4,
+    "start_time": "14:00",
+    "end_time": "15:00",
+    "is_live": true,
+    "color": "#0f766e"
+  },
+  {
+    "title": "Off Air Broadcasting",
+    "host": "Station Automation",
+    "description": "Automated music and station programming.",
+    "day_of_week": 4,
+    "start_time": "12:30",
+    "end_time": "13:00",
+    "is_live": true,
+    "color": "#4b5563"
+  },
+  {
+    "title": "Municipal Menemen",
+    "host": "DJ Merto Meowies",
+    "description": "",
+    "day_of_week": 4,
+    "start_time": "16:00",
+    "end_time": "17:00",
+    "is_live": true,
+    "color": "#eab308"
+  },
+  {
+    "title": "The Venue",
+    "host": "Mega",
+    "description": "",
+    "day_of_week": 4,
+    "start_time": "17:00",
+    "end_time": "18:00",
+    "is_live": true,
+    "color": "#06b6d4"
+  },
+  {
+    "title": "Off Air Broadcasting",
+    "host": "Station Automation",
+    "description": "Automated music and station programming.",
+    "day_of_week": 4,
+    "start_time": "18:00",
+    "end_time": "18:30",
+    "is_live": true,
+    "color": "#4b5563"
+  },
+  {
+    "title": "Everyone has one, sometimes it stinks",
+    "host": "DJ Amanda, DJ Eddy, and DJ Sasha",
+    "description": "",
+    "day_of_week": 4,
+    "start_time": "18:30",
+    "end_time": "19:30",
+    "is_live": true,
+    "color": "#22c55e"
+  },
+  {
+    "title": "Off Air Broadcasting",
+    "host": "Station Automation",
+    "description": "Automated music and station programming.",
+    "day_of_week": 4,
+    "start_time": "19:30",
+    "end_time": "23:59",
+    "is_live": true,
+    "color": "#4b5563"
+  },
+  {
+    "title": "Off Air Broadcasting",
+    "host": "Station Automation",
+    "description": "Automated music and station programming.",
+    "day_of_week": 5,
+    "start_time": "00:00",
+    "end_time": "11:30",
+    "is_live": true,
+    "color": "#4b5563"
+  },
+  {
+    "title": "Octoyap Traveler 0",
+    "host": "shawn",
+    "description": "",
+    "day_of_week": 5,
+    "start_time": "11:30",
+    "end_time": "12:30",
+    "is_live": true,
+    "color": "#ec4899"
+  },
+  {
+    "title": "Off Air Broadcasting",
+    "host": "Station Automation",
+    "description": "Automated music and station programming.",
+    "day_of_week": 5,
+    "start_time": "12:30",
+    "end_time": "13:00",
+    "is_live": true,
+    "color": "#4b5563"
+  },
+  {
+    "title": "Decompression",
+    "host": "Phoenix",
+    "description": "",
+    "day_of_week": 5,
+    "start_time": "13:00",
+    "end_time": "14:00",
+    "is_live": true,
+    "color": "#f97316"
+  },
+  {
+    "title": "Off Air Broadcasting",
+    "host": "Station Automation",
+    "description": "Automated music and station programming.",
+    "day_of_week": 5,
+    "start_time": "14:00",
+    "end_time": "14:30",
+    "is_live": true,
+    "color": "#4b5563"
+  },
+  {
+    "title": "Thunder Surge",
+    "host": "Electro and Slickioka",
+    "description": "",
+    "day_of_week": 5,
+    "start_time": "14:30",
+    "end_time": "15:30",
+    "is_live": true,
+    "color": "#8b5cf6"
+  },
+  {
+    "title": "Variety Hours",
+    "host": "WJTB Radio",
+    "description": "Station variety programming.",
+    "day_of_week": 5,
+    "start_time": "15:30",
+    "end_time": "17:30",
+    "is_live": true,
+    "color": "#0f766e"
+  },
+  {
+    "title": "Off Air Broadcasting",
+    "host": "Station Automation",
+    "description": "Automated music and station programming.",
+    "day_of_week": 5,
+    "start_time": "17:30",
+    "end_time": "23:59",
+    "is_live": true,
+    "color": "#4b5563"
+  },
+  {
+    "title": "Off Air Broadcasting",
+    "host": "Station Automation",
+    "description": "Automated music and station programming.",
+    "day_of_week": 6,
+    "start_time": "00:00",
+    "end_time": "23:59",
+    "is_live": true,
+    "color": "#4b5563"
+  }
+]

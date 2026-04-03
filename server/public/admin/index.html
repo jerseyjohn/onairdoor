@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OnAirDoor Admin</title>
+    <link rel="stylesheet" href="/admin/styles.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">OnAirDoor</p>
+          <h1>Station Control Panel</h1>
+          <p class="subhead">Manage branding, stream source, and the live station schedule from one place.</p>
+        </div>
+        <div class="hero-controls">
+          <div class="theme-toggle">
+            <span>Appearance</span>
+            <button id="theme-toggle" type="button" class="secondary">Toggle Dark Mode</button>
+          </div>
+          <div class="token-panel">
+            <label for="token">Admin Token</label>
+            <input id="token" type="password" placeholder="Enter admin token" />
+            <button id="save-token" type="button">Use Token</button>
+            <p id="auth-status" class="status muted">Authentication required.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Station Settings</h2>
+        <form id="settings-form" class="grid-form">
+          <label>Station Name<input name="station_name" required /></label>
+          <label>Tagline<input name="tagline" required /></label>
+          <label>Stream URL<input name="stream_url" required /></label>
+          <label>Timezone<input name="timezone" required /></label>
+          <label>Clock Format
+            <select name="clock_format" required>
+              <option value="24">24-hour</option>
+              <option value="12">12-hour</option>
+            </select>
+          </label>
+          <label>City and State<input name="location_label" placeholder="Newark, NJ" required /></label>
+          <label class="wide">Website URL<input name="website_url" placeholder="https://wjtbradio.com" required /></label>
+          <label>Status Callout<input name="hero_message" required /></label>
+          <label>Accent Color<input name="accent_color" type="color" required /></label>
+          <label>Background Color<input name="background_color" type="color" required /></label>
+          <label class="wide">Logo URL<input name="logo_url" required /></label>
+          <label>Override Banner
+            <select name="override_enabled" required>
+              <option value="false">Disabled</option>
+              <option value="true">Enabled</option>
+            </select>
+          </label>
+          <label>Override Title<input name="override_title" placeholder="Special Broadcast Tonight" /></label>
+          <label class="wide">Override Message<textarea name="override_message" rows="3" placeholder="Tune in at 7 PM for a live guest set from the studio."></textarea></label>
+          <button type="submit">Save Settings</button>
+        </form>
+      </section>
+
+      <section class="panel">
+        <h2>Status Panel Copy</h2>
+        <form id="status-copy-form" class="grid-form">
+          <label>Section Label<input name="status_section_label" required /></label>
+          <label>Live Badge Label<input name="live_badge_label" required /></label>
+          <label>Off Air Badge Label<input name="off_air_badge_label" required /></label>
+          <label class="wide">Off Air Title<input name="off_air_title" required /></label>
+          <label class="wide">Off Air Line 1<input name="off_air_line_one" required /></label>
+          <label class="wide">Off Air Line 2<textarea name="off_air_line_two" rows="3" required></textarea></label>
+          <label>Status Button Label<input name="status_button_label" required /></label>
+          <button type="submit">Save Status Copy</button>
+        </form>
+      </section>
+
+      <section class="panel">
+        <div class="section-header">
+          <div>
+            <h2>Events</h2>
+            <p class="calendar-hint">Manage the scrolling event bars shown under the player.</p>
+          </div>
+          <button form="events-form" type="submit">Save Events</button>
+        </div>
+        <form id="events-form" class="events-form">
+          <div class="events-panel">
+            <div class="events-toolbar">
+              <label>Events Panel
+                <select name="events_enabled" required>
+                  <option value="false">Disabled</option>
+                  <option value="true">Enabled</option>
+                </select>
+              </label>
+              <div class="events-format muted">
+                Featured events appear large on the display.
+              </div>
+            </div>
+            <input type="hidden" name="events_json" />
+            <textarea name="events_content" hidden></textarea>
+            <div id="events-builder" class="events-builder"></div>
+            <button id="new-event" type="button" class="secondary">Add Event</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="panel">
+        <div class="section-header">
+          <h2>Schedule</h2>
+          <button id="new-slot" type="button">New Slot</button>
+        </div>
+        <div class="calendar-panel">
+          <div class="calendar-heading">
+            <div>
+              <p class="muted">Weekly Calendar</p>
+              <p class="calendar-hint">Click any lane to create a slot. Click a show block to edit it.</p>
+            </div>
+          </div>
+          <div id="schedule-calendar" class="schedule-calendar"></div>
+        </div>
+        <form id="schedule-form" class="grid-form compact">
+          <input type="hidden" name="id" />
+          <label>Title<input name="title" required /></label>
+          <label>Host<input name="host" required /></label>
+          <label>Day
+            <select name="day_of_week" required>
+              <option value="0">Sunday</option>
+              <option value="1">Monday</option>
+              <option value="2">Tuesday</option>
+              <option value="3">Wednesday</option>
+              <option value="4">Thursday</option>
+              <option value="5">Friday</option>
+              <option value="6">Saturday</option>
+            </select>
+          </label>
+          <label>Start<input name="start_time" type="time" required /></label>
+          <label>End<input name="end_time" type="time" required /></label>
+          <label>Live Slot
+            <select name="is_live">
+              <option value="true">Yes</option>
+              <option value="false">No</option>
+            </select>
+          </label>
+          <label>Color<input name="color" type="color" required /></label>
+          <label class="wide">Poster URL<input name="poster_url" placeholder="https://wjtbradio.com/path/to/poster.jpg" /></label>
+          <label class="wide">Description<textarea name="description" rows="3"></textarea></label>
+          <div class="actions">
+            <button type="submit">Save Slot</button>
+            <button id="reset-slot" type="button" class="secondary">Reset</button>
+          </div>
+        </form>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Show</th>
+                <th>Host</th>
+                <th>Day</th>
+                <th>Time</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="schedule-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Display Endpoint</h2>
+        <p class="muted">Point the Windows client at this URL:</p>
+        <code id="display-url">Loading…</code>
+      </section>
+    </main>
+    <script type="module" src="/admin/app.js"></script>
+  </body>
+</html>

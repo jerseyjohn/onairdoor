@@ -1,0 +1,20 @@
+services:
+  onairdoor:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: onairdoor
+    ports:
+      - "8080:8080"
+    environment:
+      PORT: 8080
+      DB_PATH: /app/data/onairdoor.sqlite
+      ADMIN_TOKEN: ${ADMIN_TOKEN:-}
+      ADMIN_BOOTSTRAP_TOKEN: ${ADMIN_BOOTSTRAP_TOKEN:-}
+      PUBLIC_BASE_URL: ${PUBLIC_BASE_URL:-http://localhost:8080}
+      SCHEDULE_CONFIG_PATH: /app/config/schedule.json
+      SCHEDULE_CONFIG_MODE: ${SCHEDULE_CONFIG_MODE:-overwrite}
+    volumes:
+      - ./data:/app/data
+      - ./config:/app/config:ro
+    restart: unless-stopped

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OnAirDoor Display</title>
+    <link rel="stylesheet" href="/display/styles.css" />
+  </head>
+  <body>
+    <main class="screen">
+      <section class="dashboard">
+        <section class="stream-column">
+        <article class="stream-card">
+          <div class="masthead">
+            <div class="brand">
+              <img id="logo" alt="Station logo" />
+              <div class="brand-copy">
+                <p class="eyebrow">Live Broadcast</p>
+                <h1 id="station-name">Loading station…</h1>
+                <p id="tagline" class="muted"></p>
+              </div>
+            </div>
+            <div class="clock-card">
+              <div id="clock-time" class="clock-time">--:--</div>
+              <div id="clock-day" class="clock-day"></div>
+              <div id="location-label" class="clock-zone"></div>
+            </div>
+          </div>
+          <div class="player-shell">
+            <div id="override-banner" class="override-banner hidden">
+              <strong id="override-title"></strong>
+              <span id="override-message"></span>
+            </div>
+            <video
+              id="stream-video"
+              class="stream-video"
+              autoplay
+              muted
+              playsinline
+            ></video>
+            <p id="stream-status" class="muted stream-status">Loading live stream…</p>
+          </div>
+        </article>
+        <article id="events-card" class="events-card hidden">
+          <div class="events-bar">
+            <div class="events-label">EVENTS</div>
+            <div class="events-marquee">
+            <div id="events-list" class="events-list"></div>
+            </div>
+          </div>
+        </article>
+        </section>
+
+        <aside class="side-panel">
+          <article class="now-card">
+            <div class="status-kicker">
+              <p id="status-section-label" class="eyebrow">Studio Status</p>
+              <span id="status-badge" class="status-badge">LIVE</span>
+            </div>
+            <div class="now-content">
+              <div class="now-copy">
+                <h2 id="current-title">Waiting for schedule</h2>
+                <p id="current-host" class="host-line"></p>
+                <p id="current-description" class="muted"></p>
+                <span id="hero-message" class="hero-message"></span>
+                <span id="status-button-label" class="status-chip">Now Live</span>
+                <div id="website-panel" class="website-panel">
+                  <p class="website-label">Website</p>
+                  <p id="website-url" class="website-url">Loading…</p>
+                </div>
+              </div>
+              <img id="current-poster" class="current-poster hidden" alt="Current show poster" />
+            </div>
+          </article>
+
+          <article class="schedule-card">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">Today</p>
+                <h2>Show Schedule</h2>
+              </div>
+            </div>
+            <div id="today-list" class="schedule-calendar"></div>
+            <div class="up-next">
+              <p class="eyebrow">Up Next</p>
+              <div id="upcoming-list" class="upcoming-list"></div>
+            </div>
+          </article>
+        </aside>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.20/dist/hls.min.js"></script>
+    <script type="module" src="/display/app.js"></script>
+  </body>
+</html>
